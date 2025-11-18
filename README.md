@@ -24,7 +24,7 @@ docker build -t my-static-site .
 
 3. Run the Container
 
-Run Nginx container and expose it on port 8080:
+Run an Nginx container and expose it on port 8080:
 
 docker run -d -p 8080:80 --name static-site-container my-static-site
 
@@ -38,17 +38,10 @@ http://localhost:8080
 You should now see your static website running inside a Docker container 🎉
 
 🛑 Stop & Remove the Container
-
-Stop the running container:
-
 docker stop static-site-container
-
-
-Remove it:
-
 docker rm static-site-container
 
-🧹 Optional: Clean Docker Resources
+🧹 Clean Docker Resources (Optional)
 docker system prune -a --volumes -f
 
 📦 Technologies Used
@@ -57,6 +50,6 @@ Docker
 
 Nginx
 
-HTML/CSS
+HTML & CSS
 
-Mac/Linux/Windows-compatible
+Mac / Windows / Linux compatible
